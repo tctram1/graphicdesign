@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+<meta charset="utf-8">
+
+<title>Tuyen's Assignment 2</title>
+
+<link href="Index.css" rel="stylesheet" type="text/css">
+
+<!-- Link Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Marcellus|Poppins" rel="stylesheet">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('assets/Nav Buttons/nav-button-home-hover.png','assets/Nav Buttons/nav-button-home-active.png','assets/Nav Buttons/nav-button-article-hover.png','assets/Nav Buttons/nav-button-article-active.png','assets/Nav Buttons/nav-button-media-hover.png','assets/Nav Buttons/nav-button-media-active.png','assets/Nav Buttons/nav-button-source-hover.png','assets/Nav Buttons/nav-button-source-active.png','assets/My Gif/src-mystatic.png','assets/My Gif/src-mystaticbw.png','assets/Nav Buttons/nav-button-about-hover.png','assets/Nav Buttons/nav-button-about-active.png')">
+<div class="wrapper">
+
+	<!-- === START MASTHEAD === -->
+	<header class="masthead" role="banner">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="pageTitle">
+       	  <a class="titleLink" href="index.html">
+    		JUNO Mission - A Thread to Human Existence
+            </a>
+      </div>
+        <br>        
+    </header>
+    <!-- end of masthead -->
+    
+    
+    
+    <!-- === START NAVIGATION === -->
+    <br>
+    <nav>
+        <!-- Home Button -->
+        <div class="buttonBox">
+            <a href="index.html">
+            <img src="assets/Nav Buttons/nav-button-home-active.png" alt="" class="buttonSize" id="Image1" onClick="MM_swapImage('Image1','','assets/Nav Buttons/nav-button-home-active.png',1)" onMouseOver="MM_swapImage('Image1','','assets/Nav Buttons/nav-button-home-hover.png',1)" onMouseOut="MM_swapImgRestore()"/>
+            </a>
+        </div>
+        
+        <!-- Article Button -->        
+        <div class="dropdown">
+        
+            <span class="buttonBox">
+                <a href="Article.html">
+                <img src="assets/Nav Buttons/nav-button-article-base.png" alt="" class="buttonSize" id="Image2" onClick="MM_swapImage('Image2','','assets/Nav Buttons/nav-button-article-active.png',1)" onMouseOver="MM_swapImage('Image2','','assets/Nav Buttons/nav-button-article-hover.png',1)" onMouseOut="MM_swapImgRestore()"/>
+                </a>
+            </span>
+            
+            <div class="dropdown-content">
+            	<p><a class="dropdown-contentLink" href="Article1.html">This is a Spinning Spacecraft</a></p>
+                <p><a class="dropdown-contentLink" href="Article2.html">Orbit - At a Turning Point</a></p>
+                <p><a class="dropdown-contentLink" href="Article3.html">Jupiter's Poles</a></p>          
+            </div>
+            
+        </div>
+        
+        <!-- Media Button -->
+        <div class="dropdown">
+        
+            <span class="buttonBox">
+                <a href="Media.html">
+                <img src="assets/Nav Buttons/nav-button-media-base.png" alt="" class="buttonSize" id="Image3" onClick="MM_swapImage('Image3','','assets/Nav Buttons/nav-button-media-active.png',1)" onMouseOver="MM_swapImage('Image3','','assets/Nav Buttons/nav-button-media-hover.png',1)" onMouseOut="MM_swapImgRestore()"/>
+                </a>
+            </span>
+            
+            <div class="dropdown-content">
+            	<p><a class="dropdown-contentLink" href="Media1.html">Juno Captures the 'Roar' of Jupiter</a></p>
+                <p><a class="dropdown-contentLink" href="Media2.html">Juno Listens to Jupiter's Auroras</a></p>
+                <p><a class="dropdown-contentLink" href="Media3.html">Jupiter's Glow in Infrared Light</a></p>          
+            </div>
+        
+        </div>
+        
+        <!-- About Button -->
+        <div class="buttonBox">
+        	<a href="About.html">
+            <img src="assets/Nav Buttons/nav-button-about-base.png" alt="" class="buttonSize" id="Image6" onClick="MM_swapImage('Image6','','assets/Nav Buttons/nav-button-about-active.png',1)" onMouseOver="MM_swapImage('Image6','','assets/Nav Buttons/nav-button-about-hover.png',1)" onMouseOut="MM_swapImgRestore()"/> 
+            </a>
+        </div>
+        
+        <!-- Source Button -->
+        <div class="buttonBox">
+        	<a href="Source.html">
+            <img src="assets/Nav Buttons/nav-button-source-base.png" alt="" class="buttonSize" id="Image4" onClick="MM_swapImage('Image4','','assets/Nav Buttons/nav-button-source-active.png',1)" onMouseOver="MM_swapImage('Image4','','assets/Nav Buttons/nav-button-source-hover.png',1)" onMouseOut="MM_swapImgRestore()"/>
+            </a>
+        </div>
+        
+        
+    </nav>
+  <!-- end of navigation -->
+    
+    
+    <!-- Body Content -->
+    <div class="contentPadding">
+    
+    <!-- === START SIDEBAR === -->
+    <div class="sidebar">
+    
+    	<!-- Articles -->
+        <div>
+        	<div class="sidebarHeading">Articles</div>
+            <hr>
+            <ul>
+                <li><a class="sidebarLink" href="Article1.html">This is a Spinning Spacecraft</a></li>
+                <li><a class="sidebarLink" href="Article2.html">Orbit - At a Turning Point</a></li>
+                <li><a class="sidebarLink" href="Article3.html">Jupiter's Poles</a></li>
+            </ul>
+        </div>
+        
+        <br>
+        
+        <!-- Media -->
+        <div>
+        	<div class="sidebarHeading">Media</div>
+            <hr>
+            <ul>
+                <li><a class="sidebarLink" href="Media1.html">Juno Captures the 'Roar' of Jupiter</a></li>
+                <li><a class="sidebarLink" href="Media2.html">Juno Listens to Jupiter's Auroras</a></li>
+                <li><a class="sidebarLink" href="Media3.html">Jupiter's Glow in Infrared Light</a></li>
+            </ul>
+        </div>    
+    
+    </div>
+    <!-- end of sidebar -->
+    
+    
+    
+    
+    <!-- === START MAIN BODY === -->
+    <main role="main">
+    
+    		<!-- My Slides -->
+            <div class="contentPadding">
+                <div class="slideshow-container">
+    
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 9</div>
+                      <img src="assets/src-article0-1-pic1.jpg" style="width:100%">
+                      <div class="text">Jupiter and its moons</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 9</div>
+                      <img src="assets/src-article0-2-pic1.jpg" style="width:100%">
+                      <div class="text">Juno spacecraft in orbit above Jupiter</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 9</div>
+                      <img src="assets/src-article1-pic1.jpg" style="width:100%">
+                      <div class="text">Technicians test Juno's solar array</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 9</div>
+                      <img src="assets/src-article1-pic2.jpg" style="width:100%">
+                      <div class="text">Thermal blankets being installed</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 9</div>
+                      <img src="assets/src-article1-pic3.jpg" style="width:100%">
+                      <div class="text">Juno's main body</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">6 / 9</div>
+                      <img src="assets/src-article1-pic4.jpg" style="width:100%">
+                      <div class="text">Juno scapecraft compares to human scale</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">7 / 9</div>
+                      <img src="assets/src-article2-pic1.jpg" style="width:100%">
+                      <div class="text">Juno's orbiting diagram</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">8 / 9</div>
+                      <img src="assets/src-article3-pic1.png" style="width:100%">
+                      <div class="text">Juno's north pole</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">9 / 9</div>
+                      <img src="assets/src-article3-pic2.jpg" style="width:100%">
+                      <div class="text">Juno's south pole</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+                </div>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+                  <span class="dot" onclick="currentSlide(8)"></span>
+                  <span class="dot" onclick="currentSlide(9)"></span>
+            	</div>
+            </div>
+                      			
+			
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				}
+			</script>
+            <!-- end of my slides -->
+    
+    
+        	<!-- article heading -->
+            <div class="heading">
+       	 		Mission
+            </div>
+            
+            <section>
+            <figure class="picBox">
+           		<img src="assets/src-article0-2-pic1.jpg" class="picSize" alt="Fig. 1 - Juno spacecraft in orbit above Jupiter"/>
+                <figcaption>Fig. 1 - Juno spacecraft in orbit above Jupiter</figcaption>
+            </figure>
+            
+            <div class="contentPadding">
+            NASA’s Juno mission is to deepen the knowledge of how we, as human beings, came to existence by studying the origin and structure of the largest and possibly oldest planet in our solar system – Jupiter (<a href="https://www.nasa.gov/feature/nasa-sails-full-speed-ahead-in-solar-system-exploration">Perez, 2016</a>).
+			<p>Jupiter is the largest planet in our solar system. It is among the brightest objects that appears in the night sky. It has four moons. Scientists believe this planet moved around throughout the solar system in its youth, instead of remaining in the same spot as it is now. Before Juno, numerous of spacecrafts were sent to study this mysterious giant, including but not limited to the Pioneer 10 and 11, Voyager 1 and 2, Galileo, Ulysses, Cassini, and Hubble Space Telescope. Early findings about Jupiter in 1970s concluded that it is composed mostly of liquid. Like Earth, it has magnetic field which suggesting that it might have a solid core in its composition. Scientists also found the presence of active volcanoes on the surface of one of Jupiter’s moons, Io. It is observed to be about 36 volcanoes. They found to be similar to those we have on Earth in term of lava temperature. Scientists also discovered that weather on Jupiter has similar characteristics to that of Earth. It has lightning in the cloud tops and hurricane-like storms (<a href="http://www.nasa.gov/feature/goddard/2016/decades-of-discovery-nasa-s-exploration-of-jupiter">Morrow, 2016</a>).</p>
+			<p>With Juno’s successful arrival in July 2016, scientists expected to collect information on Jupiter’s atmosphere, and magnetic and gravitational fields. The information, thus, will provide an insight of the planet’s structure for a better understanding of its origin and evolution. This information could also hint clues about the origins and formation of our solar system (<a href="http://www.nasa.gov/feature/goddard/2016/decades-of-discovery-nasa-s-exploration-of-jupiter">Morrow, 2016</a>).</p>
+            </div>
+            </section>
+            
+    </main>
+    <!-- end of main body -->
+    
+    </div>
+    <!-- end of body content -->
+    
+    
+    
+    
+    <!-- === START FOOTER === -->
+    <br>
+    <br>
+    <footer>
+        <strong>School of Art and Design . Western Carolina University
+        <br>Fall 2016 . Tuyen Tram</strong>
+    </footer>
+    <br>
+    <!-- end of footer -->
+
+
+</div> <!-- end of wrapper div -->
+</body>
+
+</html>

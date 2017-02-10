@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Part 1 is the HEAD - NOT visible in browser window -->
+<head>
+<meta charset="utf-8">
+
+<title>Article 1 - Spacecraft</title>
+
+<style type="text/css">
+	body {
+		background-image: url(assets/src-background-pic1w.jpg);
+		background-repeat: repeat;
+		background-color: none;
+		background-position: center;
+	}
+	
+	
+	.wrapper { /* "." specify "class" selector */
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		/* background-color: rgba(74,189,172,0.75); */
+		background-color: rgba(171,219,242,0.75);
+		border: 20px solid #dfdce3;
+		border-radius: 100px;
+		color: rgba(51,51,51,1.00);
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+		font-size: 1.5em; /* 1em = 16px = 100% */
+	}
+	
+	
+	header { /* no "." - custom class */
+		width: 100%;
+		text-align: center;
+		color: #fc4a1a;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+	}
+
+
+nav {
+	width: 100%;
+	background-color: #dfdce3;
+	border-top: 5px solid #f7b733;
+	border-bottom: 5px solid #f7b733;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-align: center;
+	color: #f7b733;
+	font-weight: bold;
+}
+
+
+nav li { /* control horizontal look of navigation bar */
+	display: inline;
+} /* if there's a "li" type in nav class, put it inline */
+	
+	
+	a:link {
+		color: #fc4a1a;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: #f7b733;
+		text-decoration: underline;
+	}
+	
+	a:visited {
+		color: #fc4a1a;
+		text-decoration: none;
+	}
+	
+	
+	.selectedLink {
+		color: rgba(32,75,162,1.00);
+	}
+	
+	
+	section {
+		column-width: 50%;
+		
+		/* Column Count needs following */
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    	-moz-column-count: 2; /* Firefox */
+    	column-count: 2;
+		
+		/* Column Gap  needs following */
+		-webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    	-moz-column-gap: 10px; /* Firefox */
+    	column-gap: 10px;
+		
+		/* Column Rule needs following */
+		-webkit-column-rule: thin solid #fc4a1a; /* Chrome, Safari, Opera */
+    	-moz-column-rule: thin solid #fc4a1a; /* Firefox */
+    	column-rule: thin solid #fc4a1a;
+	}
+	
+	
+	.sectionPadding {
+		padding-right: 70px;
+		padding-left: 70px;
+		text-align: left;
+	}
+	
+	
+	
+	footer {
+		width: 100%;
+		color: #fc4a1a;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+	
+	
+	.typeSmall {
+		font-size: 70%;
+		text-align: center;
+	}
+	
+	
+	.typeMedium {
+		font-size: 180%;
+		text-align: left;
+		padding-left: 70px;
+		text-decoration: underline;
+	}
+	
+	
+	.typeLarge {
+		font-size: 250%;
+		text-align: center;
+	}
+	
+	
+	.typeCaption {
+		font-size: 70%;
+	}
+	
+	
+	/* Contol picture size */
+	.picSize {
+		width: 100%;
+	}
+	
+	
+	.picBox {
+		width: 80%;
+		display: block; /* Center Image */
+		margin-left: auto; /* Center Image */
+		margin-right: auto; /* Center Image */
+		text-align: center;
+	}
+	
+	
+	p {
+		text-indent: 50px;
+	}
+	
+	
+	/* Media Querry - Tell it to change to 1 column when screen width is small */
+	@media only screen and (max-width: 900px)
+	{
+		
+		.wrapper { /* "." specify "class" selector */
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			/* background-color: rgba(74,189,172,0.75); */
+			background-color: rgba(171,219,242,0.75);
+			border: 10px solid #dfdce3;
+			border-radius: 100px;
+			color: rgba(51,51,51,1.00);
+			font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+			font-size: 1em; /* 1em = 16px = 100% */
+		}
+		
+		section {
+			column-width: 100%;
+			
+			/* Column Count needs following */
+			-webkit-column-count: 1; /* Chrome, Safari, Opera */
+			-moz-column-count: 1; /* Firefox */
+			column-count: 1;
+		}
+		
+		
+		nav li { /* control horizontal look of navigation bar */
+			display: block;
+		} /* if there's a "li" type in nav class, put it inline */
+		
+		
+		.sectionPadding {
+			padding-right: 20px;
+			padding-left: 20px;
+			text-align: justify;
+		}
+		
+		
+		.typeSmall {
+			font-size: 60%;
+			text-align: center;
+		}
+		
+		
+		.typeMedium {
+			font-size: 130%;
+			text-align: left;
+			padding-left: 20px;
+			text-decoration: underline;
+		}
+		
+		
+		.typeLarge {
+			font-size: 180%;
+			text-align: center;
+		}
+	
+	}
+	
+</style>
+</head>
+
+
+<!-- Part 2 of HTML file - VISIBLE in browser window -->
+<body>
+<div class="wrapper">
+
+		<header class="typeLarge">
+        	<br />
+        	<a href="index2.html">
+            	JUNO Mission - A Thread to Human Existence
+            </a>
+  		</header>
+        
+        
+  		<nav>
+			<ul>
+            	<li>[ <span class="selectedLink">Spacecraft</span> ]</li>
+				<li>[ <a href="article2.html">Orbiting</a> ]</li>
+				<li>[ <a href="article3.html">Jupiter's Poles</a> ]</li>
+				<li>[ <a href="bibliography.html">Sources</a> ]</li>
+    		</ul>
+		</nav>
+        
+        
+        <br/>
+        
+        
+        <div class="typeMedium">
+            It's a Spinning Spacecraft
+        </div>
+        
+        
+        <br/>
+       
+       
+        <section>
+            <div class="sectionPadding">
+            
+            <div class="picBox">
+            	<img src="assets/src-article1-pic4.jpg" class="picSize" alt=""/>
+                <span class="typeCaption">Juno scapecraft compares to human scale</span>
+            </div>
+            
+        		<p>Juno uses a rotating, solar-powered spacecraft to provide extreme stability while offer an ease of control. Its rotation rate varies throughout the mission. It uses 1 RPM for cruise, 2 RPM for science operations, and 5 RPM for main engine maneuvers. While in orbit at Jupiter, with two rotations per minute, it takes about two hours (equivalent to 240 rotations) for Juno to fly from one pole to another (“Spacecraft,” n.d.).</p>
+            
+			  <p>The main body of this spacecraft is in a hexagon shape that has a two-deck structure. It is 11.5 feet (3.5 meters) tall and 11.5 feet (3.5 meters) in diameter. To protect Juno in a heavy radiation environment for a sustained exploration, it is equipped with the first-of-its-kind radiation-shielded electronics vault. This vault is about the size of an SUV’s truck. It houses Juno’s command and date handling box, power and data distribution unit, and about 20 other electronic assemblies. The entire unit weighs about 400 pounds, approximately 200 kilograms. This spacecraft runs on solar power. It is generated by three arrays consisting of 11 solar panels. The surface area of these solar panels are required to be very large because Jupiter is about five times farther from the sun than Earth. It means it will receive less sunlight as it gets closer to Jupiter’s orbit. Therefore, it needs larger panels in order to generate enough energy to operate. These three arrays of solar panels extend outward from Juno’s main body, which gives the spacecraft an overall length of more than 66 feet (20 meters) (“Spacecraft,” n.d.). </p>
+                 
+            </div> 
+        </section>
+        
+        <br/>
+        
+        <div class="picBox">
+            <img src="assets/src-article1-pic1.jpg" class="picSize" alt=""/>
+            <span class="typeCaption">Technicians test Juno's solar array</span>
+       	</div>
+        
+        <br/>
+        
+        <div class="picBox">      
+            <img src="assets/src-article1-pic2.jpg" class="picSize" alt=""/>
+            <span class="typeCaption">Thermal blankets being installed</span>
+        </div>
+        
+        <br/>
+        
+        <div class="picBox">
+            <img src="assets/src-article1-pic3.jpg" class="picSize" alt=""/>
+            <span class="typeCaption">Juno's main body</span>
+        </div>
+        
+        <br/>
+        
+        <footer class="typeSmall">
+        	<b>School of Art and Design . Western Carolina University
+            <br/>Fall 2016 . Tuyen Tram</b>
+        </footer>
+        
+        <br/>
+
+</div>
+</body>
+</html>

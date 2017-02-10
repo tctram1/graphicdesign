@@ -1,0 +1,590 @@
+@charset "utf-8";
+
+.wrapper {
+	width: 85%;
+	max-width: 1800px;
+	/* margin left and right must be set to "auto" the Center overall context */
+	margin-right: auto;
+	margin-left: auto;
+	color: rgba(43,35,1,1.00);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.25em;
+	text-align: left;
+	border: thick solid rgba(43,35,1,1.00);
+	border-top-left-radius: 150px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 150px;
+	/* Use for when you hae a border around sth and your got padding and got border  takes up pixel space  tell the computer to automatically adjust total max-width with any margin/padding/etc. to keep the max-width*/
+	box-sizing: border-box;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+}
+
+
+
+body {
+	background-image: url(assets/src-background-pic1.jpg);
+	background-attachment: fixed;
+}
+
+
+
+.masthead {
+	width: 100%;
+	background-color: rgba(115,175,182,1.00);
+	border-top-left-radius: 145px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	color: rgba(249,247,234,1.00);
+	
+}
+
+
+
+.pageTitle {
+	font-size: 3.75em;
+	font-family: 'Marcellus', serif;
+	font-weight: bolder;
+	text-align: center;
+	color: rgba(249,247,234,1.00);
+}
+
+
+/* Link style for page title */
+a.titleLink:link, a.titleLink:active, a.titleLink:visited {
+	text-decoration: none;
+	color: rgba(249,247,234,1.00);
+}
+
+
+
+nav {
+	width: 70%;
+	background-color: rgba(43,35,1,1.00);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.buttonBox {
+	width: 20%;
+	float: left;
+	overflow: auto;
+}
+
+
+
+.buttonSize {
+	width: 100%;
+}
+
+
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(249,247,234,1.00);
+	min-width: 20%;
+	max-width: 25%;
+	box-shadow: 0px 8px 16px 0px rgba(148,148,148,0.3);
+	padding: 12px 16px;
+	z-index: 2;
+}
+
+.dropdown:hover .dropdown-content {
+	position: absolute;
+    display: inline-block;
+}
+
+
+
+a.dropdown-contentLink:link, a.dropdown-contentLink:active, a.dropdown-contentLink:visited {
+	text-decoration: none;
+	color: rgba(43,35,1,1.00);
+}
+
+
+
+a.dropdown-contentLink:hover {
+	text-decoration: underline;
+}
+
+
+
+.contentPadding {
+	clear: both;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+.contentPaddingMedia {
+	clear:both;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+
+.sidebar {
+	width: 21%;
+	Height: 100%;
+	float: left;
+	clear: right;
+	background-color: rgba(115,175,182,1.00);
+	padding: 2%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	font-family: 'Poppins', sans-serif;
+	color: rgba(249,247,234,1.00);
+}
+
+
+
+.sidebarHeading {
+	color: rgba(45,76,78,1.00);
+	font-family: 'Marcellus', serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+
+/* Link style for list of article and media */
+a.sidebarLink:link, a.sidebarLink:active, a.sidebarLink:visited {
+	text-decoration: none;
+	color: rgba(249,247,234,1.00);
+}
+
+
+
+.sidebarActiveLink {
+	color: rgba(43,35,1,1.00);
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+
+
+hr {
+	border: thin solid rgba(45,76,78,1.00);
+}
+
+
+
+main {
+	width: 75%;
+	height: 100%;
+	float: right;
+}
+
+
+
+.heading {
+	color: rgba(45,76,78,1.00);
+	padding-left: 2.5%;
+	font-family: 'Marcellus', serif;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+
+
+.subheading {
+	color:  rgba(43,35,1,1.00);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+
+/* Link style for subheadings on Article and Media page */
+a.subheadingLink:link, a.subheadingLink:active, a.subheadingLink:visited {
+	text-decoration: none;
+	color: rgba(43,35,1,1.00);
+}
+
+
+
+section {
+	column-width: 50%;
+	
+	/* Column Count needs following */
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	
+	/* Column Gap  needs following */
+	-webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 10px; /* Firefox */
+	column-gap: 10px;
+	
+	/* Column Rule needs following */
+	-webkit-column-rule: thin solid rgba(45,76,78,1.00); /* Chrome, Safari, Opera */
+	-moz-column-rule: thin solid rgba(45,76,78,1.00); /* Firefox */
+	column-rule: thin solid rgba(45,76,78,1.00);
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	z-index: 1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	color: rgba(249,247,234,1.00);
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: rgba(249,247,234,1.00);
+	font-size: 10px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor:pointer;
+	height: 5px;
+	width: 5px;
+	margin: 0 2px;
+	background-color: rgba(115,175,182,1.00);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+
+
+.picBox {
+	width: 80%;
+	display: block; /* Center Image */
+	margin-left: auto; /* Center Image */
+	margin-right: auto; /* Center Image */
+	text-align: center;
+}
+
+
+
+.picSize {
+	width: 100%;
+}
+
+
+
+.videoBox {
+    position: relative;
+	width: 80%;
+    padding-bottom: 45%;
+    padding-top: 0px;
+    height: 0;
+    overflow: visible;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+
+
+.videoBox iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+figcaption {
+	font-size: 80%;
+	color: rgba(72,109,114,1.00);
+}
+
+
+
+.aboutPicBox {
+	width: 35%;
+	float: left;
+	clear: both;
+	margin-right: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+
+
+.hangingIndent {
+	padding-left: 50px;
+	text-indent: -50px;
+}
+
+
+
+br {
+	clear:both;	
+}
+
+
+
+footer {
+	width: 100%;
+	text-align: center;
+	font-size: .75em;
+	color: rgba(139,139,139,1.00);
+}
+
+
+
+
+
+
+/* Media Querry - Tell it to change to 1 column when screen width is small */
+@media only screen and (max-width: 1024px)
+{
+	
+	.wrapper {
+		width: 95%;
+		/* margin left and right must be set to "auto" the Center overall context */
+		margin-right: auto;
+		margin-left: auto;
+		color: rgba(43,35,1,1.00);
+		font-family: 'Poppins', sans-serif;
+		font-size: 1em;
+		text-align: left;
+		border: thick solid rgba(43,35,1,1.00);
+		border-top-left-radius: 150px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 150px;
+		/* Use for when you hae a border around sth and your got padding and got border  takes up pixel space  tell the computer to automatically adjust total max-width with any margin/padding/etc. to keep the max-width*/
+		box-sizing: border-box;
+		background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+		background-image: -moz-linear-gradient(270deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+		background-image: -o-linear-gradient(270deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+		background-image: linear-gradient(180deg,rgba(255,255,255,0.80) 40%,rgba(249,247,234,0.80) 100%);
+	}
+	
+	
+	
+	.pageTitle {
+		font-size: 2.25em;
+		font-family: 'Marcellus', serif;
+		font-weight: bolder;
+		text-align: center;
+		color: rgba(249,247,234,1.00);
+	}
+	
+	
+	
+	nav {
+		width: 100%;
+		background-color: rgba(43,35,1,1.00);
+		display: inline;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	
+	.buttonBox {
+		width: 20%;
+		float: left;
+		overflow: auto;
+	}
+
+
+
+	.buttonSize {
+		width: 100%;
+	}
+	
+	
+	
+	.contentPadding {
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+	
+	
+	
+	.sidebar {
+		width: 96%;
+		background-color: rgba(115,175,182,1.00);
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2%;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		font-family: 'Poppins', sans-serif;
+		color: rgba(249,247,234,1.00);
+	}
+	
+	
+	
+	.sidebarHeading {
+		color: rgba(45,76,78,1.00);
+		font-family: 'Marcellus', serif;
+		font-size: 1em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	
+	
+	main {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	
+	.heading {
+		color: rgba(45,76,78,1.00);
+		padding-left: 2.5%;
+		font-family: 'Marcellus', serif;
+		font-size: 1.75em;
+		text-transform: uppercase;
+		font-style: italic;
+		font-weight: bolder;
+	}
+
+
+
+	.subheading {
+		color:  rgba(43,35,1,1.00);
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.25em;
+		text-decoration: underline;
+	}
+	
+	
+	
+	section {
+		column-width: 100%;
+		
+		/* Column Count needs following */
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+		
+		/* Column Gap  needs following */
+		-webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+		-moz-column-gap: 10px; /* Firefox */
+		column-gap: 10px;
+		
+		/* Column Rule needs following */
+		-webkit-column-rule: thin solid rgba(45,76,78,1.00); /* Chrome, Safari, Opera */
+		-moz-column-rule: thin solid rgba(45,76,78,1.00); /* Firefox */
+		column-rule: thin solid rgba(45,76,78,1.00);
+	}
+	
+	
+	
+	.aboutPicBox {
+		width: 50%;
+	}
+	
+	
+	
+	footer {
+		width: 100%;
+		text-align: center;
+		font-size: .5em;
+		color: rgba(139,139,139,1.00);
+	}
+
+	
+}
